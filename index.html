@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyaprakash Singh - Python & AI Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Add AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Add Particle.js for background effects -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #3B82F6, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+
+        .skill-card {
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="fixed w-full z-50 transition-all duration-300" id="navbar">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold gradient-text">Satyaprakash Singh</div>
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="#home" class="hover:text-blue-400 transition">Home</a></li>
+                    <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
+                    <li><a href="#projects" class="hover:text-blue-400 transition">Projects</a></li>
+                    <li><a href="#skills" class="hover:text-blue-400 transition">Skills</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen relative overflow-hidden">
+        <div id="particles-js"></div>
+        <div class="content-wrapper flex items-center justify-center min-h-screen">
+            <div class="text-center px-6" data-aos="fade-up">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4">
+                    Hi, I'm <span class="gradient-text">Satyaprakash</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8">
+                    Python Developer & AI Enthusiast
+                </p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="http://www.linkedin.com/in/satyaprakash-singh-" target="_blank" 
+                       class="text-2xl text-gray-300 hover:text-blue-400 transition hover:scale-125">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-2xl text-gray-300 hover:text-blue-400 transition hover:scale-125">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="text-2xl text-gray-300 hover:text-blue-400 transition hover:scale-125">
+                        <i class="fab fa-kaggle"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text" data-aos="fade-up">About Me</h2>
+            <div class="max-w-3xl mx-auto text-gray-300" data-aos="fade-up" data-aos-delay="100">
+                <p class="mb-6 text-lg leading-relaxed">
+                    I'm a passionate Python Developer specializing in AI and Machine Learning. With a keen interest in solving 
+                    complex problems, I create intelligent solutions that make a difference. My expertise includes deep learning, 
+                    natural language processing, and data analysis.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 relative bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text" data-aos="fade-up">Featured Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Telegram Classifier Bot -->
+                <div class="glass-card rounded-xl overflow-hidden hover-scale" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=800&auto=format&fit=crop&q=60" 
+                             alt="Telegram Bot Project" 
+                             class="w-full h-48 object-cover"/>
+                        <div class="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1 rounded-bl-lg">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 flex items-center text-blue-400">
+                            <i class="fas fa-robot mr-2"></i>
+                            Telegram Classifier Bot
+                        </h3>
+                        <p class="text-gray-300 mb-4">
+                            Developed a Telegram bot using Python and deep learning to predict the next word in a sentence, 
+                            achieving 90% accuracy.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-sm">Deep Learning</span>
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-sm">NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Automated Media Player -->
+                <div class="glass-card rounded-xl overflow-hidden hover-scale" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1607798748738-b15c40d33d57?w=800&auto=format&fit=crop&q=60" 
+                             alt="Automated Media Player Project" 
+                             class="w-full h-48 object-cover"/>
+                        <div class="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1 rounded-bl-lg">
+                            <i class="fas fa-hand-paper"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 flex items-center text-blue-400">
+                            <i class="fas fa-play-circle mr-2"></i>
+                            Automated Media Player
+                        </h3>
+                        <p class="text-gray-300 mb-4">
+                            Developed a hand gesture recognition system using Python and MediaPipe for automated media control.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-sm">OpenCV</span>
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-sm">MediaPipe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 relative bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text" data-aos="fade-up">Technical Skills</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- AI & ML -->
+                <div class="glass-card p-6 rounded-xl skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="font-bold text-xl mb-4 flex items-center text-blue-400">
+                        <i class="fas fa-brain text-blue-400 mr-2"></i>
+                        AI & ML
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full flex items-center">
+                            <i class="fas fa-language mr-1"></i>
+                            NLP
+                        </span>
+                        <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full flex items-center">
+                            <i class="fas fa-camera-retro mr-1"></i>
+                            OpenCV
+                        </span>
+                        <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full flex items-center">
+                            <i class="fas fa-robot mr-1"></i>
+                            Machine Learning
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Programming & DB -->
+                <div class="glass-card p-6 rounded-xl skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="font-bold text-xl mb-4 flex items-center text-blue-400">
+                        <i class="fas fa-code text-blue-400 mr-2"></i>
+                        Programming & DB
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full flex items-center">
+                            <i class="fab fa-python mr-1"></i>
+                            Python
+                        </span>
+                        <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full flex items-center">
+                            <i class="fab fa-java mr-1"></i>
+                            Java
+                        </span>
+                        <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full flex items-center">
+                            <i class="fas fa-database mr-1"></i>
+                            MySQL
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Cloud & Tools -->
+                <div class="glass-card p-6 rounded-xl skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="font-bold text-xl mb-4 flex items-center text-blue-400">
+                        <i class="fas fa-cloud text-blue-400 mr-2"></i>
+                        Cloud & Tools
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full flex items-center">
+                            <i class="fab fa-aws mr-1"></i>
+                            AWS
+                        </span>
+                        <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full flex items-center">
+                            <i class="fas fa-network-wired mr-1"></i>
+                            Networking
+                        </span>
+                        <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full flex items-center">
+                            <i class="fas fa-chart-bar mr-1"></i>
+                            Data Visualization
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Satyaprakash Singh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Initialize Particles.js
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#3B82F6' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#3B82F6',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                }
+            },
+            retina_detect: true
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-gray-900', 'shadow-lg');
+            } else {
+                navbar.classList.remove('bg-gray-900', 'shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html> 
